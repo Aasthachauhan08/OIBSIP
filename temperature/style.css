@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right , #383192, #8e1954);
+
+
+}
+.converter{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(243, 233, 243);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: navajowhite;
+    
+}
+button{
+    background-color: #bfa6ed;
+    color: rgb(27, 22, 22);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #35bb47;
+
+}
+#result{
+    width: 100%;
+    padding: 10px;
+    /* /* margin-top: px; */
+    border: 1px solid#ccc; 
+    border-radius: 5px;
+    outline : none;
+    font-weight: bold;
+    color: #333;
+}
+@media screen and (max-width:500px) {
+    .converter{
+        width: 90%;
+    }
+    
+}
+/* @keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+    h2{
+        color: #333;
+        animation: fadeIn 1s ease-in;
+    }
+} */
+ @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #333;
+    animation: fadeIn 1s ease-in;
+}
+/* Blinking animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Trigger classes */
+.blink-button {
+    animation: blink 0.5s ease-in-out 3;
+}
+
+.blink-box {
+    animation: blink 0.8s ease-in-out 3;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #921a90, 0 0 20px #87147a;
+  }
+  50% {
+    box-shadow: 0 0 20px #d94cbf, 0 0 30px #903880;
+  }
+  100% {
+    box-shadow: 0 0 10px #8e3198, 0 0 20px #9419cd;
+  }
+}
+
+.converter {
+    animation: glow 5s ease-in-out infinite;
+}
